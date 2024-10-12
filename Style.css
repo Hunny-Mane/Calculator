@@ -1,0 +1,68 @@
+@media (min-width: 320px) {
+    .containor{
+        background-image: linear-gradient(120deg,rgb(235, 170, 170),rgb(209, 180, 228),rgb(211, 183, 164));
+        min-width: 300px;
+        min-height: 300px;
+        border-radius: 30px;
+        padding: 20px;
+    }
+    
+    .heading{
+        color: rgb(179, 176, 176);
+        font-size: 10em;
+        border-radius: 30px;
+        text-align: center;
+    }
+    
+    body{
+        position: absolute;
+        background-color: rgb(17, 1, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .screen{
+        position: relative;
+        width: 100%;
+        min-height: 7vh;
+        background-color: rgb(226, 211, 211);
+        border-radius: 30px;
+        border: 5px solid rgb(22, 22, 22);
+        color: black;
+        font-size: 7em;
+        text-align: end;
+    }
+
+    .btn{
+        border-radius: 50%;
+        font-size: 5em;
+        width: 9vh;
+        height: 9vh;
+        margin-left: 10px;
+        margin-top: 10px;
+        background-color: rgb(223, 235, 157);
+        color: white;
+        border: 5px solid rgb(22, 22, 22);
+    }
+
+    .clr{
+        background-color: rgb(109, 63, 63);
+    }
+
+    .smop{
+        background-color: rgb(78, 100, 93);
+    }
+
+    .number{
+        background-color: rgb(34, 79, 87);
+    }
+
+    .cmop{
+        background-color: rgb(92, 99, 54);
+    }
+
+    .res{
+        background-color: rgb(18, 75, 16);
+    }
+}
