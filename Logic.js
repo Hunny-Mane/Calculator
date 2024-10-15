@@ -303,7 +303,12 @@ root.addEventListener('click', function(event){
         return; 
     }
 
+    const temp = str;
+    const para = document.createElement('li');
+
     str = Math.sqrt(str);
+    para.textContent = `${temp}!  = ${str}`;
+    hist.appendChild(para);
     res.innerHTML = str;
 
 });
@@ -416,9 +421,16 @@ show.addEventListener('click', function(event){
 
     }else{
         //in built eval() function is used for operations.
-        let temp = str;
+        let temp2 = str;
+
+        const temp = str;
+        const para = document.createElement('li');
+
         str = "";
-        str = str.concat(eval(temp));
+
+        str = str.concat(eval(temp2));
+        para.textContent = `${temp}!  = ${str}`;
+        hist.appendChild(para);
         res.innerHTML = temp;
 
     }
