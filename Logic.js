@@ -431,7 +431,7 @@ show.addEventListener('click', function(event){
         str = str.concat(eval(temp2));
         para.textContent = `${temp}  = ${str}`;
         hist.appendChild(para);
-        res.innerHTML = temp;
+        res.innerHTML = temp2;
 
     }
 
