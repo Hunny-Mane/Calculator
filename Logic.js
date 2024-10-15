@@ -307,7 +307,7 @@ root.addEventListener('click', function(event){
     const para = document.createElement('li');
 
     str = Math.sqrt(str);
-    para.textContent = `${temp}!  = ${str}`;
+    para.textContent = `${temp}  = ${str}`;
     hist.appendChild(para);
     res.innerHTML = str;
 
@@ -429,7 +429,7 @@ show.addEventListener('click', function(event){
         str = "";
 
         str = str.concat(eval(temp2));
-        para.textContent = `${temp}!  = ${str}`;
+        para.textContent = `${temp}  = ${str}`;
         hist.appendChild(para);
         res.innerHTML = temp;
 
