@@ -425,4 +425,10 @@ show.addEventListener('click', function(event){
 
 });
 
+const erase_hist = document.querySelector('.btn-datadel');
 
+erase_hist.addEventListener('click', function(event){
+
+    hist.innerHTML = "";
+
+});
