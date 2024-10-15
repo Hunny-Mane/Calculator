@@ -33,7 +33,7 @@
     min-width: 30%;
     border-radius: 30px;
 }
-
+/* giving a box shadow effect when mouse is hovered */
 .histroy:hover{
     box-shadow: 0px 0px 15px 7px rgb(250, 123, 155);
 
@@ -65,7 +65,7 @@
     overflow: auto;
     overflow-x: hidden;
 }
-
+/* to remove the scrollbars  */
 .logs::-webkit-scrollbar{
     display: none;
 }
@@ -98,7 +98,7 @@
     border-radius: 20px ;
     min-width: 70%;
 }
-
+/* giving a box shadow effect when mouse is hovered */
 .calc:hover{
     box-shadow: 0px 0px 15px 7px rgb(250, 123, 155);
 }
@@ -115,7 +115,7 @@
     overflow: auto;
     overflow-y: hidden;
 }
-
+/* to remove the scrollbars  */
 .screen::-webkit-scrollbar{
     display: none;
 }

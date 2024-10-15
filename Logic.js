@@ -98,7 +98,7 @@ clr.addEventListener('click', function(event){
 });
 
 addition.addEventListener('click', function(event) {
-    
+    //checks last char if it may result in ambiguity
     const lastChar = str.charAt(str.length - 1); 
 
     if(lastChar === "*" || 
@@ -112,7 +112,7 @@ addition.addEventListener('click', function(event) {
         return; 
 
     }else{
-
+        //if nothing is printed
         if(str === ""){
             res.innerHTML = "0";
         }else{
@@ -125,7 +125,7 @@ addition.addEventListener('click', function(event) {
 });
 
 subtraction.addEventListener('click', function(event){
-
+    //checks last char if it may result in ambiguity
     const lastChar = str.charAt(str.length - 1); 
 
     if(lastChar === "*" || 
@@ -140,15 +140,15 @@ subtraction.addEventListener('click', function(event){
 
     }else{
 
-            str = str.concat("-");
-            res.innerHTML = str;
+        str = str.concat("-");
+        res.innerHTML = str;
 
     }
 
 });
 
 multiplication.addEventListener('click', function(event){
-    
+    //checks last char if it may result in ambiguity
     const lastChar = str.charAt(str.length - 1); 
 
     if(lastChar === "+" || 
@@ -162,7 +162,7 @@ multiplication.addEventListener('click', function(event){
         return; 
 
     }else{
-
+        //if nothing is printed
         if(str === ""){
             res.innerHTML = "0";
         }else{
@@ -175,7 +175,7 @@ multiplication.addEventListener('click', function(event){
 });
 
 division.addEventListener('click', function(event){
-    
+    //checks last char if it may result in ambiguity
     const lastChar = str.charAt(str.length - 1); 
 
     if(lastChar === "*" || 
@@ -189,7 +189,7 @@ division.addEventListener('click', function(event){
         return; 
 
     }else{
-
+        //if nothing is printed
         if(str === ""){
             res.innerHTML = "0";
         }else{
@@ -202,7 +202,7 @@ division.addEventListener('click', function(event){
 });
 
 modulo.addEventListener('click', function(event){
-    
+    //checks last char if it may result in ambiguity
     const lastChar = str.charAt(str.length - 1); 
 
     if(lastChar === "*" || 
@@ -216,7 +216,7 @@ modulo.addEventListener('click', function(event){
         return; 
 
     }else{
-
+        //if nothing is printed
         if(str === ""){
             res.innerHTML = "0";
         }else{
@@ -229,7 +229,7 @@ modulo.addEventListener('click', function(event){
 });
 
 fraction.addEventListener('click', function(event){
-    
+    //checks last char if it may result in ambiguity
     const lastChar = str.charAt(str.length - 1); 
 
     if(lastChar === "*" || 
@@ -243,7 +243,7 @@ fraction.addEventListener('click', function(event){
         return; 
 
     }else{
-
+        //if nothing is printed
         if(str === ""){
             res.innerHTML = "0.";
         }else{
@@ -296,7 +296,7 @@ factorial.addEventListener('click', function(event){
 });
 
 root.addEventListener('click', function(event){
-
+    //if nothing is printed
     if(str === ""){
         res.innerHTML = "0";
         alert("Invalid Input");
@@ -309,7 +309,7 @@ root.addEventListener('click', function(event){
 });
 
 sqr.addEventListener('click', function(event){
-
+    //checks last char if it may result in ambiguity
     const lastChar = str.charAt(str.length - 1); 
 
     if(lastChar === "*" || 
@@ -323,7 +323,7 @@ sqr.addEventListener('click', function(event){
         return; 
 
     }else{
-        
+        //if nothing is printed        
         if(str === ""){
             res.innerHTML = "0";
             alert("Invalid Input");
@@ -339,7 +339,7 @@ sqr.addEventListener('click', function(event){
 });
 
 cub.addEventListener('click', function(event){
-
+    //checks last char if it may result in ambiguity
     const lastChar = str.charAt(str.length - 1); 
 
     if(lastChar === "*" || 
@@ -353,7 +353,7 @@ cub.addEventListener('click', function(event){
         return; 
 
     }else{
-        
+        //if nothing is printed        
         if(str === ""){
             res.innerHTML = "0";
             alert("Invalid Input");
@@ -369,7 +369,7 @@ cub.addEventListener('click', function(event){
 });
 
 exponential.addEventListener('click', function(event){
-
+    //checks last char if it may result in ambiguity
     const lastChar = str.charAt(str.length - 1); 
 
     if(lastChar === "*" || 
@@ -383,7 +383,7 @@ exponential.addEventListener('click', function(event){
         return; 
 
     }else{
-        
+        //if nothing is printed        
         if(str === ""){
             res.innerHTML = "0";
             alert("Invalid Input");
@@ -401,7 +401,7 @@ exponential.addEventListener('click', function(event){
 const show = document.querySelector('.btn-eql');
 
 show.addEventListener('click', function(event){
-    
+    //checks last char if it may result in ambiguity    
     const lastChar = str.charAt(str.length - 1); 
 
     if(lastChar === "*" || 
@@ -415,7 +415,7 @@ show.addEventListener('click', function(event){
         return; 
 
     }else{
-        
+        //in built eval() function is used for operations.
         let temp = str;
         str = "";
         str = str.concat(eval(temp));
@@ -428,7 +428,7 @@ show.addEventListener('click', function(event){
 const erase_hist = document.querySelector('.btn-datadel');
 
 erase_hist.addEventListener('click', function(event){
-
+    //clears histroy
     hist.innerHTML = "";
 
 });
